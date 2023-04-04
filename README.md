@@ -16,3 +16,10 @@ First of all, you want to deploy the mysql database.
 * Deploy Mysql database with 3 replicas and volumes for data persistence
 
 To simplify the process you can use Helm for that.
+
+**Solution**
+
+We can use the chart presented [here](https://github.com/bitnami/charts/tree/main/bitnami/mysql) to install using helm.
+
+    helm repo add bitnami https://charts.bitnami.com/bitnami
+    helm install my-release bitnami/mysql 

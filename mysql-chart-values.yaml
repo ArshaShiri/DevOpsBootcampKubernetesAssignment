@@ -1,0 +1,13 @@
+architecture: replication
+# from MySQL common parameters section in the bitnami mysql chart
+auth:
+  rootPassword: secret-root-pass
+  database: my-app-db
+  username: my-user
+  password: my-pass
+
+secondary:
+  # 1 primary and 2 secondary
+  replicaCount: 2
+  persistence:
+    storageClass: standard
