@@ -3,3 +3,9 @@
 ## EXERCISE 1: Create a Kubernetes cluster
 
 * Create a Kubernetes cluster (Minikube or LKE)
+
+**Solution**
+
+    minikube start
+
+    # For LKE, Linode can be used
