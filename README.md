@@ -44,3 +44,7 @@ With docker-compose, you were setting env_vars on server. In K8s there are own c
 First we create a secrete for the db `db-secret.yaml`. We can then apply it:
 
     kubectl apply -f db-secret.yaml
+
+We also set the config map file for the database and apply it:
+
+    kubectl apply -f db-config.yaml
