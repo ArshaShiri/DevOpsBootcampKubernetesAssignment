@@ -89,3 +89,11 @@ For this deployment you just need 1 replica, since this is only for your own use
 After creating the config file for phpmyadmin:
 
     kubectl apply -f phpmyadmin.yaml
+
+
+
+
+Now your application setup is running in the cluster, but you still need a proper way to access the application. Also, you don't want users to access the application using the IP address and instead use a domain name. For that, you want to install Ingress controller in the cluster and configure ingress access for your application.
+
+## EXERCISE 5: Deploy Ingress Controller
+* Deploy Ingress Controller in the cluster - using Helm
