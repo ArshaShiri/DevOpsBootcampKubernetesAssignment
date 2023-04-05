@@ -121,3 +121,8 @@ Create the `java-app-ingress.yaml` file and set the host to `my-java-app.com`.
     
 The app can be accessed from the browser:
 ![image](https://user-images.githubusercontent.com/18715119/230173054-d9bb60d8-d61b-4fba-b39f-23e537bbc5cf.png)
+
+## EXERCISE 7: Port-forward for phpmyadmin
+However, you don't want to expose the phpmyadmin for security reasons. So you configure port-forwarding for the service to access on localhost, whenever you need it.
+
+* Configure port-forwarding for phpmyadmin
