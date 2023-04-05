@@ -118,3 +118,6 @@ Create the `java-app-ingress.yaml` file and set the host to `my-java-app.com`.
 
     # Finally:
     kubectl apply -f java-app-ingress.yaml
+    
+The app can be accessed from the browser:
+![image](https://user-images.githubusercontent.com/18715119/230173054-d9bb60d8-d61b-4fba-b39f-23e537bbc5cf.png)
