@@ -83,3 +83,9 @@ As a next step you
 * deploy phpmyadmin to access Mysql UI.
 
 For this deployment you just need 1 replica, since this is only for your own use, so it doesn't have to be High Availability. A simple deployment.yaml file and internal service will be enough.
+
+**Solution**
+
+After creating the config file for phpmyadmin:
+
+    kubectl apply -f phpmyadmin.yaml
