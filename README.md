@@ -126,3 +126,7 @@ The app can be accessed from the browser:
 However, you don't want to expose the phpmyadmin for security reasons. So you configure port-forwarding for the service to access on localhost, whenever you need it.
 
 * Configure port-forwarding for phpmyadmin
+
+**Solution**
+
+    kubectl port-forward svc/phpmyadmin-service 8081:8081
