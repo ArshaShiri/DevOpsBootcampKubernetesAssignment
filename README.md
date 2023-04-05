@@ -97,3 +97,7 @@ Now your application setup is running in the cluster, but you still need a prope
 
 ## EXERCISE 5: Deploy Ingress Controller
 * Deploy Ingress Controller in the cluster - using Helm
+
+This exercise is done in minikube so the following is sufficient:
+
+    minikube addons enable ingress 
