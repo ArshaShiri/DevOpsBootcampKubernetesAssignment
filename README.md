@@ -105,3 +105,16 @@ This exercise is done in minikube so the following is sufficient:
 ## EXERCISE 6: Create Ingress rule
 
 Create Ingress rule for your application access
+
+**Solution**
+
+Create the `java-app-ingress.yaml` file and set the host to `my-java-app.com`.
+
+    # Find the ip of minikube
+    minikube ip
+
+    # Add the following line to /etc/hosts
+    {minikube-ip}   my-java-app.com
+
+    # Finally:
+    kubectl apply -f java-app-ingress.yaml
