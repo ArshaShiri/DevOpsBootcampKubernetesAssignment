@@ -75,3 +75,11 @@ Finally, we need to pull the image of this application from a docker repository.
         # my-release-mysql-primary-0             1/1     Running   0          6m12s
         # my-release-mysql-secondary-0           1/1     Running   0          6m12s
         # my-release-mysql-secondary-1           1/1     Running   0          5m6s
+
+
+## EXERCISE 4: Deploy phpmyadmin
+As a next step you
+
+* deploy phpmyadmin to access Mysql UI.
+
+For this deployment you just need 1 replica, since this is only for your own use, so it doesn't have to be High Availability. A simple deployment.yaml file and internal service will be enough.
