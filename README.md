@@ -100,4 +100,8 @@ Now your application setup is running in the cluster, but you still need a prope
 
 This exercise is done in minikube so the following is sufficient:
 
-    minikube addons enable ingress 
+    minikube addons enable ingress
+
+## EXERCISE 6: Create Ingress rule
+
+Create Ingress rule for your application access
