@@ -141,3 +141,20 @@ As the final step, you decide to create a helm chart for your Java application w
 * Create custom values file as an example for developers to use when deploying the application
 * Deploy the java application using the chart with helmfile
 * Host the chart in its own git repository
+
+**Solution**
+
+After creating the related files for helm, we can install the app and access it:
+
+
+    # Ensure the sql pod is running as well
+    helm install my-release bitnami/mysql -f mysql-chart-values.yaml
+
+    # Ensure the secrete for pulling docker image from private repository is set
+
+    # Ensure the generated values are correct
+    helm install my-java-app java-app -f java-app/values-override.yaml --dry-run --debug
+
+    helm install my-java-app java-app -f java-app/values-override.yaml
+
+The app can be accessed like before through the browser.
