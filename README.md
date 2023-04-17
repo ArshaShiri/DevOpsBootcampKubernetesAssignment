@@ -130,3 +130,14 @@ However, you don't want to expose the phpmyadmin for security reasons. So you co
 **Solution**
 
     kubectl port-forward svc/phpmyadmin-service 8081:8081
+
+As the final step, you decide to create a helm chart for your Java application where all the configuration files are configurable. You can then tell developers how they can use it by setting all the chart values. This chart will be hosted in its own git repository.
+
+
+
+## EXERCISE 8: Create Helm Chart for Java App
+
+* All config files: service, deployment, ingress, configMap, secret, will be part of the chart
+* Create custom values file as an example for developers to use when deploying the application
+* Deploy the java application using the chart with helmfile
+* Host the chart in its own git repository
